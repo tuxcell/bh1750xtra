@@ -1,0 +1,63 @@
+#######################################
+# Syntax for bh1750xtra.h
+#######################################
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+bh1750xtra										KEYWORD2
+Set_I2C_Slave_Address 							KEYWORD2
+Get_I2C_Slave_Address							KEYWORD2
+Get_Read_Lux									KEYWORD2
+Get_Read_Buffer									KEYWORD2
+Get_Resolution_Mode								KEYWORD2
+Get_MTreg										KEYWORD2
+Power_Down										KEYWORD2
+Power_On										KEYWORD2
+Write_I2C										KEYWORD2
+Read_I2C_To_Buffer								KEYWORD2
+Change_Resolution_Mode							KEYWORD2
+Change_Sensor_MTreg								KEYWORD2
+Calculate_Sensitivity							KEYWORD2
+Calculate_Max_lx								KEYWORD2
+Calculate_Min_lx								KEYWORD2
+Calculate_Typical_Measurement_Time_ms			KEYWORD2
+Calculate_Max_Measurement_Time_ms				KEYWORD2
+Set_Continuously								KEYWORD2
+Set_One_Time									KEYWORD2
+Set_To_Max_Resolution_Measurement				KEYWORD2
+Set_To_Fastest_Measurement						KEYWORD2
+Set_To_Highest_Range							KEYWORD2
+Set_Highest_Resolution_From_Measurement_Time	KEYWORD2
+Set_Highest_Resolution_From_MTreg				KEYWORD2
+Set_Highest_Resolution_From_Range				KEYWORD2
+Set_Fastest_Measurement_From_Resolution			KEYWORD2
+Set_Fastest_Measurement_From_Max_Range			KEYWORD2
+
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+BH1750FVI_Power_Down							LITERAL1
+BH1750FVI_Power_On								LITERAL1
+BH1750FVI										LITERAL1
+BH1750FVI_Continuously_H_Resolution_Mode		LITERAL1
+BH1750FVI_Continuously_H_Resolution_Mode2		LITERAL1
+BH1750FVI_Continuously_L_Resolution_Mode		LITERAL1
+BH1750FVI_One_Time_H_Resolution_Mode			LITERAL1
+BH1750FVI_One_Time_H_Resolution_Mode2			LITERAL1
+BH1750FVI_One_Time_L_Resolution_Mode			LITERAL1
+BH1750FVI_I2C_Slave_Address_H					LITERAL1
+BH1750FVI_I2C_Slave_Address_L					LITERAL1
+BH1750FVI_HResolution_Mode						LITERAL1
+BH1750FVI_HResolution_Mode2						LITERAL1
+BH1750FVI_LResolution_Mode						LITERAL1
+BH1750FVI_Continuously							LITERAL1
+BH1750FVI_One_Time								LITERAL1
+
+######################################
+# EOF
+######################################

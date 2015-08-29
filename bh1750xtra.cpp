@@ -123,11 +123,11 @@ void bh1750xtra::Change_Resolution_Mode(byte BH1750FVI_Resolution_Mode){ // Chan
 }
 
 void bh1750xtra::Change_Sensor_MTreg(byte BH1750FVI_MTreg){ // Sensor Measurement Time = MTreg (measurement time register)
-    if ((MTreg>=69)&(MTreg<=254)){ // valid MTreg in [69, 254]
+    if ((BH1750FVI_MTreg>=31)&&(BH1750FVI_MTreg<=254)){ // valid MTreg in [31, 254]
         byte MTreg_H=BH1750FVI_Change_Measurement_Time_H, MTreg_L=BH1750FVI_Change_Measurement_Time_L;
-        MTreg=BH1750FVI_MTreg; // steore the new value of MTreg
+        MTreg=BH1750FVI_MTreg; // store the new value of MTreg
         MTreg_H|=(MTreg>>5); // Sensor instruction for High bit of MTreg
-        MTreg_L|=(MTreg && 0b00011111); // Sensor instruction for Low bit of MTreg
+        MTreg_L|=(MTreg & 0b00011111); // Sensor instruction for Low bit of MTreg
         Write_I2C(MTreg_H); // Changing High bit of MTreg
         Write_I2C(MTreg_L); // Changing Low bit of MTreg
     }
